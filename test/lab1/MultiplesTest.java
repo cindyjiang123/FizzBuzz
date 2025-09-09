@@ -13,7 +13,7 @@ public class MultiplesTest {
     @Test
     public void testFifteen() {
         assertEquals(7,
-                Multiples.Multiples(16, 3, 5),
+                Multiples.multiples(16, 3, 5),
                 "Multiples.multiples(16, 3, 5) is incorrect, the values" +
                         " it should be counting are: 3, 5, 6, 9, 10, 12, 15");
     }
@@ -21,7 +21,7 @@ public class MultiplesTest {
     @Test
     public void testTen() {
         assertEquals(4,
-                Multiples.Multiples(10, 3, 5),
+                Multiples.multiples(10, 3, 5),
                 "Multiples.multiples(10, 3, 5) is incorrect, the values" +
                         " it should be counting are: 3, 5, 6, 9");
     }
@@ -29,14 +29,14 @@ public class MultiplesTest {
     @Test
     public void testThousand() {
         assertEquals(466,
-                Multiples.Multiples(1000, 3, 5),
+                Multiples.multiples(1000, 3, 5),
                 "Multiples.multiples(1000, 3, 5) is incorrect.");
     }
 
     @Test
     public void testEquals() {
         assertEquals(249,
-                Multiples.Multiples(1000, 4, 4),
+                Multiples.multiples(1000, 4, 4),
                 "Multiples.multiples(1000, 4, 4) is incorrect.");
     }
 
